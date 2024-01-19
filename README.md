@@ -5,7 +5,9 @@ This repository includes Matlab implementation of the experimental result of the
 ## 1. Preparation
 
 Generation of asymmetric noises (5 and 10 - 10-dimensional) should be preceded.
-Root folder: asymmetric&gaussian_mixture
+
+--Root folder: asymmetric&gaussian_mixture--
+
    * Run TSLD-LQ-10D_asymmetric - ULA_asymmetric_10D
    * Run TSLD-LQ-5D_asymmetric - ULA_asymmetric_5D
    * Run TSLD-LQ-3D_asymmetric - ULA_asymmetric_3D
@@ -14,7 +16,8 @@ Running them will create a csv file with artificial noises in the current folder
 
 ## 2. Main
 
-Root folder: asymmetric&gaussian_mixture
+--Root folder: asymmetric&gaussian_mixture--
+
 (1) Gaussian mixture case
   * Run TSLD-LQ-10D_gaussian_mixture - gaussian_mixture_10D.m
   * Run TSLD-LQ-5D_gaussian_mixture - gaussian_mixture_5D.m
