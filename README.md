@@ -4,4 +4,6 @@ This repository includes Matlab implementation of the experimental result of the
 
 1. Preparation
    * Generation of asymmetric noises (5 and 10 - dimensional ) should be preceded.
-   * asymmetric&gaussian_mixture - 
+   * asymmetric&gaussian_mixture - TSLD-LQ-10D_asymmetric - ULA_asymmetric_10D
+   * asymmetric&gaussian_mixture - TSLD-LQ-5D_asymmetric - ULA_asymmetric_5D
+   * asymmetric&gaussian_mixture - TSLD-LQ-3D_asymmetric - ULA_asymmetric_3D
