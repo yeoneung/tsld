@@ -10,7 +10,7 @@ Root folder: asymmetric&gaussian_mixture
    * Run TSLD-LQ-5D_asymmetric - ULA_asymmetric_5D
    * Run TSLD-LQ-3D_asymmetric - ULA_asymmetric_3D
 
-Running (1), (2), and (3) will create a csv file with artificial noises.
+Running them will create a csv file with artificial noises in the current folder associated.
 
 ## 2. Main
 
