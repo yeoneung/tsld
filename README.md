@@ -4,13 +4,13 @@ This repository includes Matlab implementation of the experimental result of the
 
 ## 1. Preparation
 
-Generation of asymmetric noises (5 and 10 - dimensional ) should be preceded.
+Generation of asymmetric noises (5 and 10 - 10-dimensional) should be preceded.
 Root folder: asymmetric&gaussian_mixture
    * Run TSLD-LQ-10D_asymmetric - ULA_asymmetric_10D
    * Run TSLD-LQ-5D_asymmetric - ULA_asymmetric_5D
    * Run TSLD-LQ-3D_asymmetric - ULA_asymmetric_3D
 
-Running (1), (2), and (3) will create csv file with artificial noises.
+Running (1), (2), and (3) will create a csv file with artificial noises.
 
 ## 2. Main
 
@@ -24,4 +24,12 @@ Root folder: asymmetric&gaussian_mixture
   * Run TSLD-LQ-10D_asymmetric - asymmetric_10D.m
   * Run TSLD-LQ-5D_asymmetric - asymmetric_5D.m
   * Run TSLD-LQ-3D_asymmetric - asymmetric_3D.m
+
+## 3. Comparison
+
+(1) Comparison of Langevin iteration (ULA vs preconditioned ULA)
+  * Run comparison - Comparison_Langevin_iteration.m
+
+(2) Comparison between our method and PSRL-LQ (https://ieeexplore.ieee.org/document/8884712)
+  * Run comparison - Comparison_regret.m
 
