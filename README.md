@@ -33,6 +33,7 @@ Running them will create a csv file with artificial noises in the current folder
 (1) Comparison of Langevin iteration (ULA vs preconditioned ULA)
   * Run comparison - Comparison_Langevin_iteration.m
 
+
 (2) Comparison between our method and PSRL-LQ (https://ieeexplore.ieee.org/document/8884712)
   * Run comparison - Comparison_regret.m
 
