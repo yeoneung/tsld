@@ -50,7 +50,7 @@
             phi_U = newton_method(phi_U,data,mean,M,L,alpha,beta,n,m,lam,1000);
 
             while 1
-                arbi = asymmetric_ULA(mean, theta, lam, phi_U, data, M, L, n, m, t_k);
+                arbi = asymmetric_ULA(mean, theta, lam, phi_U, data, M, L, n, m, t_k,alpha,beta);
                 disp(arbi)
                 a=arbi((1:n),:)';
                 b=arbi((n+1:n+m),:)';
