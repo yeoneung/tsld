@@ -32,8 +32,8 @@ Running them will create a csv file with artificial noises in the current folder
 
 (1) Comparison of Langevin iteration (ULA vs preconditioned ULA)
   * Run comparison - Comparison_Langevin_iteration.m
-  * The result is
-'''![iteration](https://github.com/yeoneung/tsld/assets/102267531/77255a86-0117-4ee8-90aa-7c39c0c7e644)
+  <!--* The result is
+ <!--![iteration](https://github.com/yeoneung/tsld/assets/102267531/77255a86-0117-4ee8-90aa-7c39c0c7e644)
 
 
 (2) Comparison between our method and PSRL-LQ (https://ieeexplore.ieee.org/document/8884712)
