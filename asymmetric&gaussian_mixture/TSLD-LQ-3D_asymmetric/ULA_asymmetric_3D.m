@@ -35,7 +35,7 @@ for iteration = 1:step_iteration+1000000
     
     if iteration > step_iteration
         
-        writematrix(x','asymmetric_noise_5D.csv','WriteMode','append')
+        writematrix(x','asymmetric_noise_3D.csv','WriteMode','append')
         data{end+1} = {x};
     end
 end
