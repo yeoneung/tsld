@@ -18,12 +18,12 @@ In addition to that, the following toolboxes are needed:
 Add an 'auxiliary' folder to the path where you intend to run the file. 
 
 
-### 2.1 Gaussian mixture noise
+### 2.1 Gaussian mixture noise 
 
 In the case of Gaussian mixture noise, run the file:
 `gaussian_mixture_3D.m`, `gaussian_mixture_5D.m`, `gaussian_mixture_10D.m`.
 
-### 2.2 Asymmetric noise
+### 2.2 Asymmetric noise 
 
 In the case of asymmetric noise, the generation of asymmetric noises (3,5,10-dimensional) should be run first.
 The following files create csv files with artificial noises in the current folder: 
@@ -36,7 +36,7 @@ To learn the system evolving under asymmetric noise, run the following files:
 ### 3. Comparison
 
 ### 3.1 Comparison of Langevin iteration (ULA vs preconditioned ULA)
-To learn systems using naive ULA, activate the following codes in `Comparison_Langevin_iteration.m` :
+To run the simulation using naive ULA, activate the following codes in `Comparison_Langevin_iteration.m` :
 ```
 %naive ULA
 writematrix(iteration,'ULA_iteration.csv');
@@ -49,12 +49,12 @@ step_iteration = ceil(64*(max(eig(preconditioner)))^2/(min(eig(preconditioner)))
 ```
 
 ```
-%In case of using ULA
+%naive ULA
 scaled_grad_U = grad_U;
 ```
 
-
-To run the simulation using preconditioned ULA, activate following codes in `Comparison_Langevin_iteration.m`:
+To run the simulation using preconditioned ULA, activate the following codes in `Comparison_Langevin_iteration.m` 
+and deactivate lines activated for %naive ULA:
 
 ```
 %preconditioner
