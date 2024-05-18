@@ -54,7 +54,7 @@ scaled_grad_U = grad_U;
 ```
 
 To run the simulation using preconditioned ULA, activate the following codes in `Comparison_Langevin_iteration.m` 
-and deactivate lines activated for %naive ULA:
+deactivating %naive ULA:
 
 ```
 %preconditioner
@@ -78,7 +78,7 @@ To compare our method with PSRL-LQ, run `Comparison_regret.m`. You will get `PSR
 
 ### 4. Double oscillator
 
-After running the files, two types of csv files remain:
+After running the files, two types of csv files are generated:
 
-`DIMENSION-time.csv` and `DIMENSION-iter.csv` are real computation time and number of step iteration for convergence of Langevin dynamics.
+`DIMENSION-time.csv` and `DIMENSION-iter.csv` include actual computation time and the number of step iterations for the convergence of Langevin dynamics.
 
