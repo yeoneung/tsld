@@ -73,7 +73,10 @@ for simulation = 1:simul
         end
     end
 end
-writematrix(iteration,'ULA_iteration.csv');
+%preconditioner
+writematrix(iteration,'preconditioned_ULA_iteration.csv');
+%naive ULA
+%writematrix(iteration,'ULA_iteration.csv');
 end
 
 
@@ -121,12 +124,12 @@ end
 phi = tr_theta_to_phi(theta_mean,n,m);
 
 %preconditioned ULA
-%step_size = (M*min(eig(preconditioner)))/(16*L^2*max(t_k,min(eig(preconditioner))));
-%step_iteration = ceil(4*(log2(max(t_k,min(eig(preconditioner)))/min(eig(preconditioner)))/(M*step_size)));
+step_size = (M*min(eig(preconditioner)))/(16*L^2*max(t_k,min(eig(preconditioner))));
+step_iteration = ceil(4*(log2(max(t_k,min(eig(preconditioner)))/min(eig(preconditioner)))/(M*step_size)));
 
 %naive ULA
-step_size = (M*min(eig(preconditioner)))/(16*L^2*(max(eig(preconditioner)))^2);
-step_iteration = ceil(64*(max(eig(preconditioner)))^2/(min(eig(preconditioner)))^2);
+%step_size = (M*min(eig(preconditioner)))/(16*L^2*(max(eig(preconditioner)))^2);
+%step_iteration = ceil(64*(max(eig(preconditioner)))^2/(min(eig(preconditioner)))^2);
 
 disp(max(eig(preconditioner)))
 disp(min(eig(preconditioner)))
@@ -161,7 +164,10 @@ for iteration = 1: step_iteration
     
     s = s1 * phi + s2;
     grad_U = -s-s_prior;
+    %In case of using preconditioner
     scaled_grad_U = inv_preconditioner*grad_U;
+    %In case of using ULA
+    %scaled_grad_U = grad_U;
     
     phi = mvnrnd(phi - step_size*scaled_grad_U, 2*(step_size)*inv_preconditioner*eye((n+m)*n))';
     
