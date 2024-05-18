@@ -2,7 +2,7 @@
 
 ## 1. Requirement
 
-The code is written based on MATLAB R2021a.
+The code is written upon MATLAB R2021a.
 
 * [MATLAB](https://www.mathworks.com),
 
