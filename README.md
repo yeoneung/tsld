@@ -1,7 +1,4 @@
-
-# TSLD
-
-Approximate Thompson Sampling for Learning Linear Quadratic Regulators with $O(\sqrt{T})$ Regret
+# Approximate Thompson Sampling for Learning Linear Quadratic Regulators with $O(\sqrt{T})$ Regret
 
 ## 1. Requirement
 
