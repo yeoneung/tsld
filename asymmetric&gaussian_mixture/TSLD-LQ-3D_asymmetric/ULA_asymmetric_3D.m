@@ -17,7 +17,7 @@ C_1 = (K-k)/2*alpha^2/(beta-alpha);
 D_1 = -(K-k)/2*(alpha+beta);
 C_2 = -(K-k)/6*alpha^3/(beta-alpha);
 D_2 = (K-k)/6*(beta^3-alpha^3)/(beta-alpha);
-writematrix(zeros(n,1)','asymmetric_noise_5D.csv')
+writematrix(zeros(n,1)','asymmetric_noise_3D.csv')
 for iteration = 1:step_iteration+1000000
     
     grad_U = k*x;
