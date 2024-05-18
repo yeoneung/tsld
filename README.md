@@ -36,7 +36,7 @@ To learn the system evolving under asymmetric noise, run the following files:
 ### 3. Comparison
 
 ### 3.1 Comparison of Langevin iteration (ULA vs preconditioned ULA)
-To run the simulation using naive ULA, activate the following codes in `Comparison_Langevin_iteration.m` :
+To learn systems using naive ULA, activate the following codes in `Comparison_Langevin_iteration.m` :
 ```
 %naive ULA
 writematrix(iteration,'ULA_iteration.csv');
