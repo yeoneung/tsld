@@ -110,9 +110,9 @@ for simulation = 1:simul
 end
 cumreg_PSRL_LQ_ULA = cumsum(regret_ULA);
 
-writematrix(cumreg_PSRL_LQ_ULA,['6d-regret' '.csv']);
-writematrix(compute_time,['6d-time' '.csv']);
-writematrix(step_iter,['6d-iter' '.csv']);
+writematrix(cumreg_PSRL_LQ_ULA,['8d-regret' '.csv']);
+writematrix(compute_time,['8d-time' '.csv']);
+writematrix(step_iter,['8d-iter' '.csv']);
 figure
 hold on
 x = 1:time_horizon;
