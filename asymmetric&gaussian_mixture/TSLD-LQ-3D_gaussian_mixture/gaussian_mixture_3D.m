@@ -98,7 +98,7 @@
     figure
     hold on
     x = 1:time_horizon;
-    y = ave_PSRL_LQ_ULA(1:time_horizon);
+    y = cumreg_PSRL_LQ_ULA(1:time_horizon);
     
     %confidence interval
     ts = tinv([0.025  0.975],size(y,1)-1);
