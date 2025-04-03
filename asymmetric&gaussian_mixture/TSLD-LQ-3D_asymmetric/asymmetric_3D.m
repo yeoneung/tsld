@@ -2,7 +2,7 @@
     n=3;
     m=3;
     simul=1;    
-    time_horizon=2000;    
+    time_horizon=2050;    
     regret_ULA = zeros(time_horizon,simul);
     
     A = [[0.3 0.1 0.2];[0.1 0.4 0];[0 0.7 0.6]];
