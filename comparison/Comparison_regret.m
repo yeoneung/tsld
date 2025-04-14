@@ -1,4 +1,3 @@
-
 function [] = PSRL_LQ()
 n = 3;
 m = 3;
@@ -103,7 +102,6 @@ writematrix(cumreg_PSRL_LQ,'PSRL.csv');
 
 
 
-
 %ULA-TSLD-LQ
 
 for simulation = 1:simul
@@ -140,7 +138,11 @@ for simulation = 1:simul
             else
                 u=-Gain*x;
             end
+            
+            z = cat(2, x',u')';
                 
+            zeta = z*z';
+
             cost = x'*Q*x+ u'*R*u;
 
             %Take expectation with repect to exact posterior
@@ -288,5 +290,3 @@ end
 theta = tr_phi_to_theta(phi,n,m);
 
 end
-
-    
